@@ -859,66 +859,6 @@ else {
 
 i++;
 
-var valRnd = getrandom(0,1);
-if ( valRnd == 0 ) { 
-	 test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
-	 test[i][0] = 'Новый абзац в HTML создается с помощью тега:';
-	 test[i][1] = "&lt; p &gt;";
-	 test[i][2] = "&lt; br &gt;";
-	 test[i][3] = "&lt; hr &gt;";
-	 test[i][4] = "&lt; pre &gt;";
- }
- else {
-  
-	  test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
-	 test[i][0] = 'Перенос строки в HTML создается с помощью тега:';
-	 test[i][1] = "&lt; br &gt;";
-	 test[i][2] = "&lt; p &gt;";
-	 test[i][3] = "&lt; hr &gt;";
-	 test[i][4] = "&lt; pre &gt;";
- }
- i++;
-  
-  
-  var valRnd = getrandom(0,1);
-if ( valRnd == 0 ) { 
-	 test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
-	 test[i][0] = 'Таблица в HTML создается с помощью тега:';
-	 test[i][1] = "&lt; table &gt;";
-	 test[i][2] = "&lt; td &gt;";
-	 test[i][3] = "&lt; tr &gt;";
-	 test[i][4] = "&lt; pre &gt;";
-}
- else {
-  
-	 test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
-	 test[i][0] = 'Строка таблицы в HTML создается с помощью тега:';
-	 test[i][1] = "&lt; tr &gt;";
-	 test[i][2] = "&lt; td &gt;";
-	 test[i][3] = "&lt; th &gt;";
-	 test[i][4] = "&lt; pre &gt;";
- }
- i++;
-  
-var valRnd = getrandom(0,1);
-if ( valRnd == 0 ) { 
-	 test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
-	 test[i][0] = 'Ячейка в таблице в HTML создается с помощью тега:';
-	 test[i][1] = "&lt; td &gt; или &lt; th &gt;";
-	 test[i][2] = "&lt; td &gt;";
-	 test[i][3] = "&lt; tr &gt;";
-	 test[i][4] = "&lt; pre &gt;";
-}
-else {
- 
-	  test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
-	 test[i][0] = 'С помощью тега &lt; pre &gt; в HTML:';
-	 test[i][1] = "текст отображается также, как набирался (с учетом всех пробелов)";
-	 test[i][2] = "создается перенос строки";
-	 test[i][3] = "создается новый абзац";
-	 test[i][4] = "создается мигающий текст";
- }
- i++;
  
 document.write( ' <canvas id="example" width="0" height="0">Обновите браузер</canvas> ' );
  test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
