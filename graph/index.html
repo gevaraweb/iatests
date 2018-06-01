@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Графы для дискретной математики</title>
+	<meta charset="utf-8">
+	<style>
+		    body {
+			     margin: 0;
+			     padding: 0;
+
+		          }
+
+	.tod2 {
+        position: absolute; /* Относительное позиционирование */
+		height: 40px; /* Высота блока */   
+		width: 80px;
+		text-align:center;
+        background-color: white;
+		display: table-cell; 
+		vertical-align: middle;
+		border:solid 1px #888389;
+		font-family: 'Cardo', serif;
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 700;
+					
+		}	
+
+					  
+	.tod {
+        position: absolute; /* Относительное позиционирование */
+		height: 30px; /* Высота блока */   
+		width: 30px;
+		text-align:center;
+		/*padding:1px 1px 1px 1px; */ 
+        background-color: white;
+		display: table-cell; 
+		vertical-align: middle;
+		border:solid 1px #888389;
+		font-family: 'Cardo', serif;
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 700;
+						
+		}	
+
+	</style>
+
+
+	<!-- libs -->
+ 
+ 	<script type="text/javascript" src="libs/three.min.js"></script>
+	<script type="text/javascript" src="libs/TrackballControls.js"></script>	
+	
+	<SCRIPT SRC="jsMath/plugins/noImageFonts.js"> </SCRIPT>
+	<SCRIPT SRC="jsMath/jsMath.js"> </SCRIPT>	
+	
+	<!-- http://silentmatt.com/javascript-expression-evaluator/ -->
+	<script src="libs/parser2.js"></script>
+
+	<!-- app -->
+	<script type="text/javascript" src="js/mainapp.js"></script>
+
+
+</head>
+<body>
+
+
+
+<hr>
+<div id="zadacha0" style = " position: relative; height: 550px; width: 1200px;" > 
+<span CLASS="math" id="formula" style = "position: absolute;  left: 50px; height: 540px; width: 1050px; padding: 10px 10px 10px 10px; font-size: 36px;">  Формула </span>
+
+	<span style = " position: absolute;  left: 50px; height: 280px; width: 1000px; padding: 10px 10px 10px 10px;  "> 
+		<div id = "table0"  style = "left: 10px; top: 50px; " > 11</div>
+		<div id = "table02" style = "cursor: pointer; " > 22</div>		
+	</span>
+		<div style = " position: absolute; cursor: pointer; left: 70px; top: 280px; font-size: 32px;" > СДНФ:</div>	
+		<div id = "sdnf" style = " position: absolute; cursor: pointer; width: 950px; left: 200px; top: 280px; font-size: 32px;" > СДНФ:</div>
+		<div style = " position: absolute; cursor: pointer; left: 70px; top: 420px; font-size: 32px;" > СКНФ:</div>		
+		<div id = "sknf" style = " position: absolute; cursor: pointer; left: 200px; top: 420px; font-size: 32px;" > СКНФ:</div>			
+</div>
+
+<hr>
+<div id="zadacha1" style = " position: relative; height: 503px; " > 
+	<span style = " position: absolute;  left: 550px; height: 500px; width: 520px; padding: 10px 10px 10px 10px;  "> 
+		<div id = "table1"  style = "cursor: pointer; " > 11</div>
+		<div id = "table12" style = "cursor: pointer; " > 22</div>
+	</span>
+		
+<span id="MyWebGLApp"  style = " position: absolute; "> </span>
+</div>
+<hr>
+<div id="zadacha2" style = " position: relative; height: 600px; " > 
+	<span style = " position: absolute;  left: 550px; height: 500px; width: 530px; padding: 10px 10px 10px 10px;  "> 
+		<div id = "table2"  style = "cursor: pointer; " > 11</div>
+		<div id = "table22" style = "cursor: pointer; " > 22</div>
+		<div id = "vector_exit" style = "cursor: pointer; " > 22</div>
+	</span>
+
+<span id="MyWebGLApp2"  style = " position: absolute; "> </span>
+</div>
+<hr>
+<div style=" font-family: 'Cardo', serif;font-size: 18px; width: 800px; padding: 0px 0px 0px 50px; ">
+<p>Транспортная компания осуществляет грузовые перевозки в города A, B, C, D, E, F, G. В таблице приведена матрица смежности графа рейсов компании.
+<p>Уcтановите последовательность городов (гамильтонов цикл) с началом в городе <span style="font-weight: bold;" id = gorod_name> </span>, проходящую через все города ровно один раз с возвращением
+в <span style="font-weight: bold;" id = gorod_name3> </span>, при условии, что город был <span style="font-weight: bold;" id = gorod2_name> </span> посещен в первой половине маршрута. 
+Город <span style="font-weight: bold;" id = gorod_name2> </span> указывать не нужно.
+</div>
+
+<div id="zadacha3" style = " position: relative; height: 270px; " > 
+	<span style = " position: absolute;  left: 20px; height: 270px; width: 900px; padding: 10px 10px 10px 10px;  "> 
+		<div id = "table3"  style = "cursor: pointer; " > 11</div>
+		<div id = "table31"  style = "cursor: pointer; " > 11</div>		
+		<div id = "table32" style = "cursor: pointer; " > 22</div>
+
+	</span>
+
+</div>
+<hr>
+
+<div  style = " position: relative; height: 40px;   width: 400px; " > 
+<span style = " position: absolute;  left: 20px;  padding: 10px 10px 10px 100px;  ">
+© Вильданов А.Н.
+</span>
+</div>
+
+<hr>
+</body>
+</html>
