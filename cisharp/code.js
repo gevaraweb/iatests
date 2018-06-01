@@ -471,36 +471,6 @@ var a = getrandom( -9, 9 ), b = getrandom( -9, 9 ), x;
 	return question;
 	}
 
-// Функция результат работы программы для теста
-function href_test() {
-	
-	var k = getrandom( 0, dictionary.length - 1 );  var word =  dictionary[k]; // выбираем случайное слово из словаря
-	var word2 =  word + '.ru';
-	answer = '&lt;a href="' + word2 + '"&gt; ' + word + ' &lt;/a &gt;'; 
-	answer2 = '&lt;a href="' + word + '"&gt; ' + word2 + ' &lt;/a &gt;'; 	
-	answer3 = '&lt;a link="' + word2 + '"&gt; ' + word + ' &lt;/a &gt;'; 
-	answer4 = '&lt;a src="' + word2 + '"&gt; ' + word + ' &lt;/a &gt;'; 
-	
-	question = "Правильная ссылка на сайт " + word2 + ' может иметь вид:';
-
-	return question;
-}
-
-// Функция результат работы программы для теста
-function src_test() {
-	
-	var k = getrandom( 0, dictionary.length - 1 );  var word =  dictionary[k]; // выбираем случайное слово из словаря
-	var word2 =  word + '.jpg';
-	answer = '&lt;img src="' + word2 + '" width="120" height="80" alt="' + word + '"&gt;'; 
-	answer2 = '&lt;img href="' + word + '" width="120" height="80" alt="' + word2 + '"&gt;'; 	
-	answer3 = '&lt;img link="' + word2 + '" width="120" height="80" alt="' + word + '"&gt;'; 
-	answer4 = '&lt;img href="' + word2 + '" width="120" height="80" alt="' + word + '"&gt;'; 
-	
-	question = "Правильная ссылка на картинку " + word2 + ' может иметь вид:';
-
-	return question;
-}
-
 var i = 0;
 
 var  test = new Array(); var podskaska = new Array(); var testType = new Array(); 
@@ -839,27 +809,6 @@ i++;
   
   i++;
   
-var valRnd = getrandom(0,1);
-if ( valRnd == 0 ) { 
-	 test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
-	 test[i][0] = href_test();
-	 test[i][1] = answer;
-	 test[i][2] =  answer2;
-	 test[i][3] =  answer3; 
-	 test[i][4] =  answer4; 
-}
-else {
-	 test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
-	 test[i][0] = src_test();
-	 test[i][1] = answer;
-	 test[i][2] =  answer2;
-	 test[i][3] =  answer3; 
-	 test[i][4] =  answer4;  
-}
-
-i++;
-
- 
 document.write( ' <canvas id="example" width="0" height="0">Обновите браузер</canvas> ' );
  test[i] = new Array(); podskaska[i]=''; testType[i] = 'radio';
  test[i][0] = bs_test();
