@@ -15,9 +15,9 @@ window.onload =
  function() 
 {
 
-	arr_operation = [ '\\vee', '\\Rightarrow', '\\wedge', '\\Leftrightarrow' ];
-	arr_operation2 = [ 'Or', 'Imp', 'And', 'Tanta' ];
-	var mas = random(0,3,3); // массив из трех случайных операций
+	arr_operation = [ '\\vee', '\\Rightarrow', '\\wedge', '\\Leftrightarrow', '\\vert', '\\downarrow', '\\oplus', '\\otimes' ];
+	arr_operation2 = [ 'Or', 'Imp', 'And', 'Tanta', 'Sheffer', 'Peirce', 'Oplus', 'Otimes' ];
+	var mas = random(0,7,3); // массив из трех случайных операций
 	
 	operand = [ ' x', ' y', ' \\overline{x}', ' \\overline{y}'];
 	operand2 = [ '(x)', '(y)', 'Not(x)', 'Not(y)'];	
@@ -891,4 +891,3 @@ function add_message( message, span_message, color )
 {
    document.getElementById( span_message ).innerHTML = '<font color = ' + color + ' > ' + message + '</font>';
 }
-  
