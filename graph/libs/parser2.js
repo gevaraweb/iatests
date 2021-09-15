@@ -59,7 +59,35 @@ function logic()
 				var value = 0;
 				if (a==b) { value = 1; }
 				return value;
-			}			
+			}
+      
+	 this.Sheffer = function(a,b)
+			{	
+				var value = 1;
+				if (a==1 && b==1) { value = 0; }
+				return value;
+			}
+      
+	 this.Peirce = function(a,b)
+			{	
+				var value = 0;
+				if (a==0 && b==0) { value = 1; }
+				return value;
+			}
+
+	 this.Oplus = function(a,b)
+			{	
+				var value = 0;
+				if (a + b == 1) { value = 1; }
+				return value;
+			}
+      
+	 this.Otimes = function(a,b)
+			{	
+				var value = 0;
+				if (a==1 && b==1) { value = 1; }
+				return value;
+			}          
 	
 	}
 		Logic = new logic();	//var c = Logic.Eq(1,1); alert(c);
@@ -444,7 +472,12 @@ var Parser = (function (scope) {
 			"Tanta": Logic.Tanta,
 			"pyt": pyt,
 			"pow": Math.pow,
-			"atan2": Math.atan2
+			"atan2": Math.atan2,
+ 			"Sheffer": Logic.Sheffer,	
+			"Peirce": Logic.Peirce,
+ 			"Oplus": Logic.Oplus,	
+			"Otimes": Logic.Otimes
+          
 		};
 
 		this.consts = {
